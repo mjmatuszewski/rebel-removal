@@ -4,8 +4,6 @@ import { Hero } from "@/components/hero";
 import { TrustBar } from "@/components/trust-bar";
 import { WhatWeTake } from "@/components/what-we-take";
 import { HowItWorks } from "@/components/how-it-works";
-import { BeforeAfterGallery } from "@/components/before-after-gallery";
-import { Testimonials } from "@/components/testimonials";
 import { ServiceArea } from "@/components/service-area";
 import { Faq } from "@/components/faq";
 import { FinalCta } from "@/components/final-cta";
@@ -28,12 +26,6 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <HowItWorks />
-        </Reveal>
-        <Reveal>
-          <BeforeAfterGallery />
-        </Reveal>
-        <Reveal>
-          <Testimonials />
         </Reveal>
         <Reveal>
           <ServiceArea />
