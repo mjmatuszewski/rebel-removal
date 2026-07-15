@@ -16,8 +16,6 @@ import { Label } from "@/components/ui/label";
 import { useQuoteModal } from "@/lib/quote-modal-context";
 import { submitQuoteRequest, type QuoteRequestPayload } from "@/lib/quote-request";
 
-const SERVICE_TYPES = ["Junk Removal", "Full Cleanout", "Moving Help", "Commercial Pickup", "Other"];
-
 type SubmitStatus = "idle" | "submitting" | "success";
 
 export function QuoteModal() {
@@ -59,7 +57,6 @@ export function QuoteModal() {
       name: String(formData.get("name") ?? ""),
       phone: String(formData.get("phone") ?? ""),
       zip: String(formData.get("zip") ?? ""),
-      serviceType: String(formData.get("serviceType") ?? ""),
       description: String(formData.get("description") ?? ""),
       photo: photo instanceof File && photo.size > 0 ? photo : null,
     };
@@ -114,26 +111,6 @@ export function QuoteModal() {
                   required
                   autoComplete="postal-code"
                 />
-              </div>
-
-              <div className="flex flex-col gap-1.5">
-                <Label htmlFor="quote-service-type">Service Type</Label>
-                <select
-                  id="quote-service-type"
-                  name="serviceType"
-                  required
-                  defaultValue=""
-                  className="h-8 w-full rounded-lg border border-input bg-transparent px-2.5 text-base outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm"
-                >
-                  <option value="" disabled>
-                    Select a service
-                  </option>
-                  {SERVICE_TYPES.map((type) => (
-                    <option key={type} value={type}>
-                      {type}
-                    </option>
-                  ))}
-                </select>
               </div>
 
               <div className="flex flex-col gap-1.5">

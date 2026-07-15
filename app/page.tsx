@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import { InsuranceBadge } from "@/components/insurance-badge";
 import { Hero } from "@/components/hero";
 import { TrustBar } from "@/components/trust-bar";
 import { WhatWeTake } from "@/components/what-we-take";
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <div id="top" className="flex flex-1 flex-col">
       <Header />
+      <InsuranceBadge />
 
       <main className="flex flex-1 flex-col">
         <Hero />

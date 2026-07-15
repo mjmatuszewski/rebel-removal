@@ -6,8 +6,8 @@ export function Footer() {
 
   return (
     <footer className="mt-auto border-t border-border bg-background">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 sm:px-6">
-        <Logo imageClassName="h-24 w-24" />
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-3 sm:px-6">
+        <Logo imageClassName="h-[280px] w-[280px]" />
         <p className="max-w-md text-sm text-muted-foreground">
           Serving {SERVICE_AREA_TOWNS.join(", ")} and surrounding areas.
         </p>

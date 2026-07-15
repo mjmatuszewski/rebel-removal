@@ -11,8 +11,18 @@ export const NAV_LINKS = [
 export const PHONE_DISPLAY = "(662) 555-0142";
 export const PHONE_HREF = "tel:+16625550142";
 
-// PLACEHOLDER, confirm real service area town list with Michael.
-export const SERVICE_AREA_TOWNS = ["Oxford", "Taylor", "Water Valley", "Abbeville"] as const;
+// PLACEHOLDER, swap for the real business email before launch.
+export const EMAIL_DISPLAY = "hello@rebelremoval.com";
+export const EMAIL_HREF = "mailto:hello@rebelremoval.com";
+
+export const SERVICE_AREA_TOWNS = [
+  "Oxford",
+  "Taylor",
+  "Water Valley",
+  "Abbeville",
+  "Batesville",
+  "Lafayette County",
+] as const;
 
 // PLACEHOLDER, swap for the real production domain once it's registered.
 export const SITE_URL = "https://rebelremoval.com";

@@ -11,8 +11,10 @@ export function Hero() {
   const { openModal } = useQuoteModal();
 
   return (
-    <section id="hero" className="flex flex-col items-center gap-6 px-4 py-20 text-center sm:py-28">
-      <Logo />
+    <section id="hero" className="flex flex-col items-center gap-4 px-4 py-10 text-center sm:py-14">
+      <Logo priority imageClassName="h-auto w-[448px] max-w-full sm:w-[770px]" />
+
+      <div aria-hidden="true" className="h-0.5 w-20 bg-border" />
 
       <h1 className="max-w-2xl text-balance font-heading text-4xl uppercase leading-tight tracking-tight text-foreground sm:text-5xl">
         Get Your Junk Gone Today

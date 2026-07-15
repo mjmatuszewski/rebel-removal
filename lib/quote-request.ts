@@ -2,7 +2,6 @@ export interface QuoteRequestPayload {
   name: string;
   phone: string;
   zip: string;
-  serviceType: string;
   description: string;
   photo: File | null;
 }
