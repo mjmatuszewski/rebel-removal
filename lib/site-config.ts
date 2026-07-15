@@ -7,9 +7,8 @@ export const NAV_LINKS = [
   { href: "#faq", label: "FAQ" },
 ] as const;
 
-// PLACEHOLDER, swap for the real business phone number before launch.
-export const PHONE_DISPLAY = "(662) 555-0142";
-export const PHONE_HREF = "tel:+16625550142";
+export const PHONE_DISPLAY = "(603) 475-6199";
+export const PHONE_HREF = "tel:+16034756199";
 
 // PLACEHOLDER, swap for the real business email before launch.
 export const EMAIL_DISPLAY = "hello@rebelremoval.com";
